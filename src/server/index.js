@@ -37,7 +37,6 @@ function addInfo(req, res) {
   projectData['arrCity'] = req.body.arrCity;
   projectData['depDate'] = req.body.depDate;
   projectData['weather'] = req.body.weather;
-  projectData['summary'] = req.body.summary;
   projectData['daysLeft'] = req.body.daysLeft;
   res.send(projectData);
 }

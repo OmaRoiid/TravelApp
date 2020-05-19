@@ -59,7 +59,7 @@ export function addTrip(e) {
     })
     .then((weatherData) => {
       const daysLeft = Math.round((timestamp - timestampNow) / 86400);
-      const userData = postData('http://localhost:5050/add', { leavingFromText, goingToText, depDateText, weather: weatherData.currently.temperature, summary: weatherData.currently.summary, daysLeft });
+      const userData = postData('http://localhost:5050/add', { leavingFromText, goingToText, depDateText, weather: weatherData.data[0].temp, daysLeft });
       return userData;
     }).then((userData) => {
       updateUI(userData);
