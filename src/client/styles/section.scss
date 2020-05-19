@@ -28,8 +28,8 @@ section.active::after {
 .map__link, 
 .map__link:visited {
   background-color: cadetblue;
-  border: black 0.1rem solid;
-  border-radius: 3rem;
+  border: black 1.5px solid;
+  border-radius: 48px;
   color: black;
   display: block;
   text-align: center;
@@ -37,9 +37,9 @@ section.active::after {
   font-weight: bold;
   padding: 10px 10px;
   margin-top: 50px;
-  margin-left: 437px;
+  margin-left: 500px;
   width: fit-content;
-    height: fit-content;
+  height: fit-content;
   text-decoration: none;
   @media(min-width: 600px) and (max-width: 1024px) {
     margin-left: 360px;
@@ -50,14 +50,14 @@ section.active::after {
   }
 }
 .map__link:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.3);
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
     color: gray;
-    transform: translateY(-0.2rem);
+    transform: translateY(-3px);
     transition: transform 0.2s ease-out;
   }
 
     .map__link:active {
-    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.2);
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
     transform: translateY(0);
   }
 }
@@ -99,7 +99,7 @@ section.active::after {
     width: 100%;
     border: none;
     @media(min-width: 600px) and (max-width: 1024px) {
-      height: 80%;
+    height: 80%;
     width: 80%;
     border: none;
       } 
@@ -113,14 +113,14 @@ section.active::after {
 
   .form__input {
     padding: 20px 0;
-    border: 0.1rem solid rgba(0,0,0,.1);
+    border: 1.5px  solid rgba(0,0,0,.1);
     color: black;
     align-items: center;
     font-size: 14px;
     line-height: 1.5;
     margin: 10px 0;
     outline: none;
-    padding: 0.5rem 0.3rem;
+    padding: 8px 8px;
     text-transform: capitalize;
   }
   .input__from {
@@ -162,15 +162,13 @@ section.active::after {
   }
   .input__submit{
     background-color: cadetblue;
-    border: black 0.1rem solid;
-    border-radius: 3rem;
+    border: black 1.5px solid;
+    border-radius: 48px;
     color:black;
-    font-size: 0.9rem;
-    grid-column: 1/3;
-    grid-row: 6/7;
-    margin: 0.5rem 0 1.5rem 0;
+    font-size: 16px;
+    margin: 8px 0 24px 0;
     opacity: 0.8;
-    padding: 0.5rem;
+    padding:8px;
     width:510px;
     @media(min-width: 600px) and (max-width: 1024px) {
       margin-top: 20px;
@@ -182,13 +180,13 @@ section.active::after {
       }
   }
   .input__submit:hover{
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.3);
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
     color: gray;
-    transform: translateY(-0.2rem);
+    transform: translateY(-3px);
     transition: transform 0.2s ease-out;
   }
   .input__submit:active{
-    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.2);
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
     transform: translateY(0);
   }
   
@@ -225,8 +223,8 @@ section.active::after {
     display: flex;
     flex-direction: row;
   .button{
-  border: black 0.1rem solid;
-  border-radius: 3rem;
+  border: black 1.5px solid;
+  border-radius: 48px;
   color: black;
   display: block;
   text-align: center;
@@ -235,7 +233,7 @@ section.active::after {
   padding: 10px 10px;
   margin-top: 50px;
   width: fit-content;
-    height: fit-content;
+  height: fit-content;
   text-decoration: none;
   }
   .button__save{

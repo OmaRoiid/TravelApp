@@ -75,7 +75,7 @@ export const getCityInfo = async (geonamesBASEURL, goingToText, geonamesUserName
     console.log("error", error);
   }
 };
-// function getWeather to get weather information from Dark Sky API 
+// function getWeather to get weather information from Weatherbit API 
 export const getWeather = async (cityLat, cityLong) => {
   const req = await fetch(weatherbitBASEURL+"lat="+ cityLat +"&lon="+ cityLong +"&key="+ weatherbitKey);
   try {
@@ -109,10 +109,11 @@ export const postData = async (url = '', data = {}) => {
     console.log("error", error);
   }
 }
+//Update The UI 
 export const updateUI = async (userData) => {
   result.classList.remove("delete");
   result.scrollIntoView({ behavior: "smooth" });
-  const res = await fetch(pixabayBASEURL + pixabayKey + "&q="+ userData.arrCity + "+city&image_type=photo");
+  const res = await fetch(pixabayBASEURL + pixabayKey + "&q="+ userData.arrCity +"+city&image_type=photo");
 
   try {
     const imageLink = await res.json();

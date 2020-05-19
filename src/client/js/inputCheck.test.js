@@ -1,3 +1,4 @@
+
 import { checkInput } from './inputCheck.js';
 
 describe('RegExp: input', function () {
