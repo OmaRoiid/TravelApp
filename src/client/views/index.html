@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TravelGo</title>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+            <nav class="navbar"> 
+                <div class="brand">
+                  <img class="logo__image" src="/src/client/views/img/logo.png" alt="logo">
+                <h2 class="navbar__brand">Travel-Go</h2>
+            </div>
+                <ul class="navbar__menu">
+                  <li class="navbar__list"><a href="#about">About</a></li>
+                  <li class="navbar__list"><a href="#trip">Plan your trip</a></li>
+                </ul>
+              </nav>
+            </div>
+        </header>
+        <main>
+            <section id="about" class="section__about active" >
+                <h1 class="tittle">Let's Prepare</h1>
+                <div class="bio">
+                <h3 >Your ultimate travel</h3>
+                <p>
+                    It’s a simple experiment, but if you haven’t tried it yet,
+                     you’re missing out! When you bring travel and friends together, the experience is awesome
+                </p>
+            </div>
+            <a href="#trip" class="map__link">add your trip</a>
+            </section>
+            <hr class="hr">
+            <section class="section__details" id="trip">
+                <div class="continer">
+                    <img class= "logo" src="/src/client/views/img/logo.png">
+                <form class="form__content" id="form">
+                    <h2 class="form__heading">Plan your trip</h2>
+                    <input type="text" class="form__input input__from" name="from" placeholder="leaving from..."
+                      autocomplete="off" required>
+                    <input type="text" class="form__input input__to" name="to" placeholder="going to..." autocomplete="off"
+                      required>
+                    <label class="date__label" for="date">Departing on...</label>
+                    <input type="date" class="form__input input__date" name="date" required>
+                    <input type="submit" class="input__submit" name="submit" value="Submit">
+                  </form>
+                </div>
+            </section>
+            <hr class="hr">
+            <section  id="result" class="trip__review delete">
+                <div class="result__image">
+                    <img src="/src/client/views/img/logo.png" alt="destination image" id="fromPixabay">
+                  </div>
+                <div class="result__content">
+                    <h2 class="city__name text__result">You are going to: <span style="color: red;" id="city"> ss</span></h2>
+                    <h2 class="date__name text__result">Departing on: <span style="color: red;" id="date">DD/MM/YYYY</span></h2>
+                    <h2 class="days__name text__result">This is <span style="color: red;" id="days"> NUM </span> days away</h2>
+                    <h2 class="weather__name text__result">Expect weather to be: <span style="color: red;" id="temp">200C</span> &#176; F, <span id="summary"></span>.</h2>
+                    <div class="buttons">
+                    <a class="button button__save" id="save" href="#">Print</a>
+                    <a class="button button__delete" id="delete" href="#">Delete</a>
+                </div>
+            
+                  </div>
+            </section>
+        </main>
+        <footer>
+            <p>Share your Travle</p>
+            <ul id="social-media">
+                <li><a href="https://www.facebook.com/omar.m.salem.9" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://twitter.com/Omar_bn_Salem" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/OmarMahmmoudSalem/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/OmaRoiid" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://medium.com/@omarmahmoudsalem/" target="_blank"><i class="fab fa-medium"></i></a></li>
+            </ul>
+        </footer>
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true">
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
