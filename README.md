@@ -11,7 +11,7 @@ To build a travel application that contains a simple form which obtains informat
 - ```npm start``` to start the app
 run in development mode
 - ``` npm run build-dev``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in index.js
+
 
 ## Screenshots 
 ![travelapp](https://user-images.githubusercontent.com/28982310/82387109-6e708200-9a36-11ea-9e49-a18667d0fa52.png)
